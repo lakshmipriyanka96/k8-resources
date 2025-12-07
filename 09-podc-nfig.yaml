@@ -1,11 +1,11 @@
 apiVersion: v1
-kind: ConfigMap
+kind: Pod
 metadata:
- name: configmapo
+  name: configmapo
 spec:
-containers:
- - name: nginx
-   image: nginx
-   envFrom:
-   - configMapRef:
-      name: configmap-demo 
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: configmap-demo
