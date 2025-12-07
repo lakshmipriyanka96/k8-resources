@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: configMap
 metadata: 
- name: configMap-demo
+  name: configMap-demo
   data: 
    name: priyanka
    profession: devops
-   
+
